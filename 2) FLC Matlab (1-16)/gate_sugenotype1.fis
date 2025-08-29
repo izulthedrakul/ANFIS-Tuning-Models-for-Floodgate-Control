@@ -1,0 +1,69 @@
+[System]
+Name='gate_sugenotype1'
+Type='sugeno'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=25
+AndMethod='min'
+OrMethod='max'
+ImpMethod='prod'
+AggMethod='sum'
+DefuzzMethod='wtaver'
+
+[Input1]
+Name='level'
+Range=[0 151]
+NumMFs=5
+MF1='vlw':'trimf',[0 0 58]
+MF2='lw':'trimf',[0 58 78]
+MF3='med':'trimf',[58 78 110]
+MF4='hg':'trimf',[78 110 150]
+MF5='vhg':'trimf',[110 150 150]
+
+[Input2]
+Name='flow'
+Range=[0 371]
+NumMFs=5
+MF1='vsl':'trimf',[0 0 11.3]
+MF2='sl':'trimf',[0 11.3 69]
+MF3='mid':'trimf',[11.3 69 194.6]
+MF4='fs':'trimf',[69 194.6 370.3]
+MF5='vfs':'trimf',[194.6 370.3 370.3]
+
+[Output1]
+Name='gate'
+Range=[0 101]
+NumMFs=5
+MF1='vnr':'linear',[0 0 8.00158385093168]
+MF2='nr':'linear',[0 0 25.0051515151515]
+MF3='avg':'linear',[0 0 50.000101010101]
+MF4='wd':'linear',[0 0 74.9950505050505]
+MF5='vwd':'linear',[0 0 91.9916161616162]
+
+[Rules]
+1 1, 1 (1) : 1
+2 1, 1 (1) : 1
+3 1, 1 (1) : 1
+4 1, 2 (1) : 1
+5 1, 3 (1) : 1
+1 2, 1 (1) : 1
+2 2, 1 (1) : 1
+3 2, 2 (1) : 1
+4 2, 3 (1) : 1
+5 2, 4 (1) : 1
+1 3, 1 (1) : 1
+2 3, 2 (1) : 1
+3 3, 3 (1) : 1
+4 3, 4 (1) : 1
+5 3, 5 (1) : 1
+1 4, 2 (1) : 1
+2 4, 3 (1) : 1
+3 4, 4 (1) : 1
+4 4, 5 (1) : 1
+5 4, 5 (1) : 1
+1 5, 3 (1) : 1
+2 5, 4 (1) : 1
+3 5, 5 (1) : 1
+4 5, 5 (1) : 1
+5 5, 5 (1) : 1

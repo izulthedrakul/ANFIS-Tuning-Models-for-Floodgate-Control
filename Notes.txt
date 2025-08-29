@@ -1,0 +1,27 @@
+The programs included on this page focus on the design of the FIS.
+
+1) FLC Python (1-4) 
+
+this folder consists of all the programs that can be run with Python's skfuzzy
+
+2) FLC Matlab (1-16) 
+
+this folder widens the fuzzy parameters by choosing types, shapes, and models 
+
+3) FLC results (1-16) 
+
+this folder shows the decision-making outputs from each model
+
+4) ANFIS data train
+
+this folder focuses on the preprocessing algorithm using velocity output
+
+5) ANFIS Matlab (17-28)
+
+this folder includes both time-series gate positional changes and Manning's velocity prediction for the ANFIS algorithm
+
+6) ANFIS results (17-28)
+
+this folder shows the results from the ANFIS-tuned FLC and predefined ANFIS control
+
+Note: all the programs need the prerequisite csv file to run. The "Drainage system CFD" page explains the improvement of the water parameter within each model

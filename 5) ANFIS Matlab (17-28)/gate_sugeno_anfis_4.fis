@@ -1,0 +1,89 @@
+[System]
+Name='gate_sugeno_anfis_4'
+Type='sugeno'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=25
+AndMethod='prod'
+OrMethod='probor'
+ImpMethod='prod'
+AggMethod='sum'
+DefuzzMethod='wtaver'
+
+[Input1]
+Name='input1'
+Range=[50 150]
+NumMFs=5
+MF1='in1mf1':'gaussmf',[10.6350202434572 50.0059270810157]
+MF2='in1mf2':'gaussmf',[10.719056842441 75.0477261017605]
+MF3='in1mf3':'gaussmf',[10.649412558363 99.9163392138145]
+MF4='in1mf4':'gaussmf',[10.7332831414077 124.942670165311]
+MF5='in1mf5':'gaussmf',[10.5620854984652 150.040048698729]
+
+[Input2]
+Name='input2'
+Range=[0.5 162.172830681328]
+NumMFs=5
+MF1='in2mf1':'gaussmf',[17.0416008358043 0.128803283141982]
+MF2='in2mf2':'gaussmf',[17.833326045143 40.3258087088732]
+MF3='in2mf3':'gaussmf',[17.2111220634684 81.3234228062917]
+MF4='in2mf4':'gaussmf',[17.201733510934 121.740283206249]
+MF5='in2mf5':'gaussmf',[17.1780594275409 162.165610948844]
+
+[Output1]
+Name='output'
+Range=[8.00158385093168 91.9916161616162]
+NumMFs=25
+MF1='out1mf1':'constant',[7.74027456775536]
+MF2='out1mf2':'constant',[8.49670781717292]
+MF3='out1mf3':'constant',[-1725.53562542259]
+MF4='out1mf4':'constant',[0.436874785761517]
+MF5='out1mf5':'constant',[-1.26855119667076e-05]
+MF6='out1mf6':'constant',[6.7232885589928]
+MF7='out1mf7':'constant',[49.7107684074282]
+MF8='out1mf8':'constant',[-11.7489422224685]
+MF9='out1mf9':'constant',[578.933000996795]
+MF10='out1mf10':'constant',[-0.144918177416255]
+MF11='out1mf11':'constant',[28.0875114485521]
+MF12='out1mf12':'constant',[55.7523882149373]
+MF13='out1mf13':'constant',[68.5457692830563]
+MF14='out1mf14':'constant',[664.935285416179]
+MF15='out1mf15':'constant',[-260.971162675737]
+MF16='out1mf16':'constant',[43.8551225439795]
+MF17='out1mf17':'constant',[80.6866022049499]
+MF18='out1mf18':'constant',[72.6204289409666]
+MF19='out1mf19':'constant',[456.434999896241]
+MF20='out1mf20':'constant',[-2504.85896629402]
+MF21='out1mf21':'constant',[59.3882619651288]
+MF22='out1mf22':'constant',[85.783540088798]
+MF23='out1mf23':'constant',[93.9872977815303]
+MF24='out1mf24':'constant',[67.9754860817351]
+MF25='out1mf25':'constant',[262.232685682261]
+
+[Rules]
+1 1, 1 (1) : 1
+1 2, 2 (1) : 1
+1 3, 3 (1) : 1
+1 4, 4 (1) : 1
+1 5, 5 (1) : 1
+2 1, 6 (1) : 1
+2 2, 7 (1) : 1
+2 3, 8 (1) : 1
+2 4, 9 (1) : 1
+2 5, 10 (1) : 1
+3 1, 11 (1) : 1
+3 2, 12 (1) : 1
+3 3, 13 (1) : 1
+3 4, 14 (1) : 1
+3 5, 15 (1) : 1
+4 1, 16 (1) : 1
+4 2, 17 (1) : 1
+4 3, 18 (1) : 1
+4 4, 19 (1) : 1
+4 5, 20 (1) : 1
+5 1, 21 (1) : 1
+5 2, 22 (1) : 1
+5 3, 23 (1) : 1
+5 4, 24 (1) : 1
+5 5, 25 (1) : 1
